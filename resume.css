@@ -1,0 +1,63 @@
+/* *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+} */
+
+
+body{
+    background-color: rgb(180, 182, 183);
+}
+
+
+
+.container{
+    margin:auto;
+    display: grid;
+    grid-template-columns: 0.70fr 1fr;
+    width: 50%;
+    height:900px;
+    box-shadow: 10px 10px 70px white;
+}
+.container .card-one{
+    padding-left: 15px;
+    width: 100%;
+    background-color: rgb(84, 149, 228);
+    color: aliceblue;
+    box-sizing: border-box;
+}
+.card-two .name{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+}
+img{
+    padding-top: 15px;
+    padding-left: 5px;
+    border-radius: 50%;
+    height: 240px;
+    width: 240px;
+}
+.container .card-two{
+    padding-left: 25px;
+    width: 100%;
+    background-color:white;
+    color:black;
+}
+.education{
+    background-color: yellow;
+    margin-right: 190px;
+}
+.name{
+    padding-right: 5px;
+    font-style: italic;
+        }
+@media print{
+    @page{
+        margin: 0;
+        size: A5;
+    }
+    *{
+        -webkit-print-color-adjust:exact;
+    }
+}
