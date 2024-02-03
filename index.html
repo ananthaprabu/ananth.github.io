@@ -1,23 +1,188 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>hithub</title>
-    <style>
-        body{
-    background: linear-gradient(rgb(80, 232, 9),white,rgb(0, 213, 255));
-    background-attachment: fixed;
-    }
-        h1{
-    border-color: rgb(243, 234, 234);
-}
-    </style>
 
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #15c2f2;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Skills h3{
+        font-size: 18px;
+    }
+   
+#bars{
+    animation: bar 2s ease-in-out;
+    color:   #451952;
+    width: 12rem;
+    height: 12rem;
+
+}
+#java{
+    color: #451952;
+    width: 12rem;
+    height: 12rem;
+}
+#data{
+    color:#451952;
+    animation: data 2s ease-in-out;
+    width: 12rem;
+    height: 12rem;
+}
+    .box{
+        width: 10rem;
+        height: 12rem; 
+        display: inline-block;
+        justify-content: space-evenly;
+        margin-left: 30%;
+        background: transparent;
+        background-color: #8c8a8a;
+        border-radius: 1rem;
+        margin-left: 10%;
+        margin-top: 3%;
+        transition: 0.05s;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+.image{
+    display: flex;
+    width: 14rem;
+    height: 14rem;
+    position: relative;
+    border-radius: 80%;
+    margin: auto;
+    bottom: 2.5em;
+    padding-right: 1em;
+
+}
+
+
+#Home {background-color: rgb(91, 94, 94);}
+#About {background-color: rgb(44, 153, 34);}
+#Skills {background-color: rgb(235, 157, 79);}
+#Contact {background-color: rgb(46, 152, 171);}
+
+</style>
 </head>
 <body>
-    <center> <h1><strong>Hi,Welcome To my page</strong> </h1></center>
-    <h1> I'm ananthaprabu</h1>
-    <a href="cv.html"> RESUME</a><br>
-    
-    <a href="resume.html"> MY RESUME</a>
+<button class="tablink" onclick="openPage('Home', this, 'gray')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('About', this, 'gray')">About</button>
+<button class="tablink" onclick="openPage('Skills', this, 'gray')">Skills</button>
+<button class="tablink" onclick="openPage('Contact', this, 'gray')">Contact</button>
+
+
+device-width
+<div id="Home" class="tabcontent">
+  <h2><u>Home</u></h3>
+      <div class="image">
+          <img src="/home/ananthaprabu/Downloads/WhatsApp Image 2023-08-29 at 10.02.52 AM.jpeg">  
+    </div>
+
+      <div class="content">
+          <h3>Hi ,I'm Ananthaprabu</h3>
+          <h1>Welcome to My portfolio Page</h1>
+          <p>Here i created portfolio website using HTML & CSS to showcase my web development and designing skills.</p>
+          <a href="/home/ananthaprabu/Documents/ananth.pdf" target="_blank"> <button>Download CV </button></a>
+
+      </div>
+</div>
+
+<div id="About" class="tabcontent">
+  <h2><u>About</u></h2>
+  <div class="name"><h2><u>ANANTHAPRABU.M</u></h2></div>
+        <div class="education"><h2>&#10146; EDUCATION</h2></div>
+        <div class="edu heading"><h4>RDM ARTS & SCIENCE COLLEGE,SIVAGANGAI</h3></div>
+        <div class="text"><p>B.SC Computer Science</p>
+            <p>YEAR 2020-23</p>
+        </div>
+        <div class="edu heading"><h4>HIGHER SECONDARY SCHOOL CERTIFICATE</h3></div>
+        <div class="text"><p>Graduate in 2020</p></div>
+        <div class="edu heading"><h4>SECONDARY SCHOOL LEAVING CERTIFICATE</h3></div>
+        <div class="text"><p>Graduate in 2018</p></div>
+        <div class="education"><h2>&#10146; LANGUAGE</h2></div>
+        <div class="text">
+            <ul><li>TAMIL</li><br>
+            <li>ENGLISH</li></ul>
+        </div>
+</div>
+
+<div id="Skills" class="tabcontent">
+  <h2><u>Skills</u></h2>
+<div id="bars" class="box"><center><i class="fa-solid fa-bars"></i> </center> <center><h4>WEB DESIGNING</h4></center><center><p>Creating and developing resopnsive websites using HTML,CSS & JS.</p></center></div>
+<div id="java" class="box"><center><i class="fa-brands fa-java"></i></center> <center><h4>JAVA</h4></center><center><p>Designing,building and maintaing java-based applications & websites.</p></div>
+<div id="data" class="box"><center><i class="fa-solid fa-database"></i></center> <center><h4>Postegre SQL</h4></center><center><p>Creating database,storing datas and manipulating datas.</p></div>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h2><u>Contact</u></h2>
+  <div class="contact-box"><h2>&#10148; CONTACT</h2></div>
+       <div class="text"><p><i class="fa-solid fa-mobile-screen-button"></i> &nbsp;7904854576</p></div>
+       <div class="text"><p><i class="fa-regular fa-envelope-open"></i> &nbsp;prabuananth310@gmail.com</p></div>
+        <div class="text"><p><i class="fa-solid fa-location-dot"></i> &nbsp;89,shanmuganathapuram,</p>
+            <div class="location"><p>A.vallalapatti(post),Melur,</p><p class="location2">Madurai-625 301</p></div></div>
+
+            <div   id="contact_me">
+              <li><a href="mailto:prabuananth310@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+              <li><a href="https://github.com/ananthaprabu/ananthaprabu.github.io"><i class="fa-brands fa-gitlab"></i></a></li>
+              <li><a href="https:////wordpress.com/home/ananth75.wordpress.com"><i class="fa-brands fa-wordpress"></i></a></li>
+              <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram "></i></a></li>
+       </div>
+
+  
+</div>
+
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
 </body>
-</html>
+</html> 
